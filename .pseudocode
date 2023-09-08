@@ -1,0 +1,52 @@
+1. Generate HTML time blocks:
+
+For each hour in a 24-hour period (00:00 to 23:00):
+Create a time block section element
+Create a sub-section element for the hour 
+Set the text content of the sub-section to display the hour
+Create a textarea element for appointment input
+Create a button element for saving appointments
+Add event listeners to the save button for saving appointments.
+Append the sub-section, textarea, and button to the time block section.
+Set the ID of the time block section to something like "hour-X"
+Append the time block section to the container.
+Repeat the above steps for each hour, creating a time block for each hour of the day.
+
+2. Javascript
+
+Get the current date and time using Day.js.
+
+Get the current hour using Day.js in 24-hour format 
+
+Get the hour associated with the time block (from its ID)
+Compare the block's hour with the current hour
+
+If the block's hour is less than the current hour:
+Add the 'past' class to the block and remove 'present' and 'future'
+Else if the block's hour is equal to the current hour:
+Add the 'present' class to the block and remove 'past' and 'future'
+Otherwise (block's hour is in the future):
+Add the 'future' class to the block and remove 'past' and 'present'
+
+Function loadAppointments():
+
+For each time block on the page:
+Get the block's ID.
+Retrieve the appointment text from local storage based on the block's ID
+
+If an appointment exists in local storage:
+Populate the textarea in the block with the saved appointment text
+
+Initialising the scheduler:
+
+Call updateTimeBlocks() to set initial time block styles.
+Call loadAppointments() to load saved appointments from local storage
+
+When a save button is clicked:
+
+Get the ID of the parent time block.
+Get the appointment text from the sibling textarea.
+If the appointment text is not empty:
+Save the appointment text in local storage with the block's ID.
+Display a notification by adding the 'show' class to the notification element.
+Set a timeout to remove the 'show' class from the notification after 3 seconds.
