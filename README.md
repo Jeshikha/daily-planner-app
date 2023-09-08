@@ -44,3 +44,16 @@ This project is licensed under the MIT License.
 ### Screenshots of Deployed App
 
 The following images show the web application's functionality:
+
+* Webpage opening - Daily Planner App
+![opening the code in the browser](/images/open.png)
+
+* Scrolling down to actual time
+![Scrolling down](/images/scroll.png)
+
+* Different colours for past, present and future time blocks
+![Colours of time blocks](/images/colour.png)
+
+* Inspecting Local Storage Application
+![Inspecting Local Storage Application](/images/app.png)
+
