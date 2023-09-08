@@ -10,6 +10,7 @@ The Daily Planner App is a simple calendar application that empowers users to ma
 * Allow a user to enter an event when they click a time block.
 * Save the event in local storage when the save button is clicked in that time block.
 * Persist events between refreshes of a page.
+* Actual Time display on screen.
 
 ### Resources and Tools
 HTML and CSS to define the structure and style, while JavaScript and jQuery provide the app's functionality, and Day.js helps manage date and time-related operations.
@@ -39,7 +40,7 @@ This project is licensed under the MIT License.
 
 1. The URL of the GitHub repository: https://github.com/Jeshikha/daily-planner-app
 
-2. The URL of the functional, deployed application on GitHub Pages:
+2. The URL of the functional, deployed application on GitHub Pages: https://jeshikha.github.io/daily-planner-app/
 
 ### Screenshots of Deployed App
 
