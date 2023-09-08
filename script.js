@@ -23,7 +23,7 @@ $(document).ready(function () {
     }
 
     // Load saved appointments from local storage
-    function loadAppointments() {
+    function loadTasks() {
         $('.time-block').each(function () {
             var blockID = $(this).attr('id');
             var appointment = localStorage.getItem(blockID);
@@ -36,7 +36,7 @@ $(document).ready(function () {
 
     // Initialize the scheduler
     updateTimeBlocks();
-    loadAppointments();
+    loadTasks();
 
     // Handle save button clicks
     $('.saveBtn').on('click', function () {
